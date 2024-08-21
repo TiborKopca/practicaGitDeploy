@@ -43,7 +43,7 @@ body{
 
 
 .title{
-  color: white;
+  color: rgb(245, 244, 244);
   font-size: 2rem;
   font-size: clamp(2rem, -2rem + 25vw, 18rem);
   margin-bottom: 5rem;
