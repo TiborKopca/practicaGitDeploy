@@ -18,17 +18,17 @@
 
 /* ******************************** */
 
-html{
+html {
   font-size: 10px;
 }
 
-body{
+body {
   font-size: 1.6rem;
   font-family: montserrat, Arial, Helvetica, sans-serif;
   background-color: #2f4358;
 }
 
-.layout{
+.layout {
   position: absolute;
   width: 100%;
   min-height: 100%;
@@ -40,19 +40,15 @@ body{
   padding: 4rem;
 }
 
-
-
-.title{
+.title {
   color: rgb(245, 244, 244);
   font-size: 2rem;
   font-size: clamp(2rem, -2rem + 25vw, 18rem);
   margin-bottom: 5rem;
   text-align: center;
-
-
 }
 
-.layout__emojis{
+.layout__emojis {
   width: 30rem;
   height: 30rem;
   overflow: hidden;
@@ -65,15 +61,82 @@ body{
   background-color: white;
 }
 
-.emojis__emoji{
+.emojis__emoji {
   font-size: 20rem;
   transition: all ease-in-out 0.3s;
 }
 
-.emojis__emoji:hover{
+.emojis__emoji:hover {
   transform: scale(1.1);
   transition: all ease-in-out 0.3s;
   filter: grayscale(0);
   cursor: pointer;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  gap: 2rem;
+}
+label {
+  flex: 1;
+  color: white;
+  font-size: 2rem;
+}
+input {
+  width: 30rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+  transition: all ease-in-out 0.3s;
+}
+.button__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 6rem; */
+}
+button[type="submit"] {
+  background: linear-gradient(145deg, #2a3c4f, #32485e);
+  box-shadow: 10px 10px 15px #243444, -10px -10px 15px #3a526c;
+  width: 10rem;
+  height: auto;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 2rem;
+  padding: 0.4rem;
+  transition: all ease-in-out 0.3s;
+}
+button[type="submit"]:hover {
+  background: linear-gradient(145deg, #275280, #32485e);
+  transition: all ease-in-out 0.3s;
+}
+button[type="reset"] {
+  width: 10rem;
+  height: auto;
+  border: none;
+  border-radius: 0.5rem;
+  background: linear-gradient(145deg, #56697e, #32485e);
+  box-shadow: 10px 10px 15px #243444, -10px -10px 15px #3a526c;
+  color: white;
+  font-size: 2rem;
+  padding: 0.4rem;
+  transition: all ease-in-out 0.3s;
+}
+button[type="reset"]:hover {
+  background: linear-gradient(145deg, #275280, #32485e);
+  transition: all ease-in-out 0.3s;
+}
+button:hover {
+  transform: scale(1.2);
+  transition: all ease-in-out 0.3s;
+}
